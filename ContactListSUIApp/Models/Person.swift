@@ -5,7 +5,10 @@
 //  Created by Zaki on 23.06.2023.
 //
 
-struct Person {
+import Foundation
+
+struct Person: Identifiable {
+    var id = UUID()
     let name: String
     let surname: String
     let email: String
@@ -16,7 +19,7 @@ struct Person {
     }
 
 
-    static func gerContacts() -> [Person] {
+    static func getContacts() -> [Person] {
         var contacts: [Person] = []
         let dataStorage = DataStorage.shared
         
@@ -35,8 +38,25 @@ struct Person {
             
             contacts.append(person)
         }
-        
         return contacts
+    }
+    
+    static func getContact() -> Person {
+        let dataStorage = DataStorage.shared
+        
+        let name = dataStorage.names.shuffled().first
+        let surname = dataStorage.surnames.shuffled().first
+        let email = dataStorage.emails.shuffled().first
+        let phone = dataStorage.phones.shuffled().first
+        
+        let person = Person(
+            name: name ?? "",
+            surname: surname ?? "",
+            email: email ?? "",
+            phone: phone ?? ""
+        )
+        
+        return person
     }
     
     

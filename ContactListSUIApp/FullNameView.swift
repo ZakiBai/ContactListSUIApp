@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct FullNameView: View {
+    let persons: [Person]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(persons) { person in
+                NavigationLink(destination: FullNameDetailsView(person: person)) {
+                    FullNameRowView(person: person)
+                }
+            }
+            .listStyle(.inset)
+            .navigationTitle("Contact List")
+
+        }
     }
+
 }
 
 struct FullNameView_Previews: PreviewProvider {
     static var previews: some View {
-        FullNameView()
+        FullNameView(persons: Person.getContacts())
     }
 }
