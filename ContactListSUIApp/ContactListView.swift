@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct ContactListView: View {
+    let persons: [Person]
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(persons) { person in
+                Section(person.fullName) {
+                    HStack {
+                        Image(systemName: "phone")
+                            .foregroundColor(.blue)
+                        Text(person.phone)
+                    }
+                    HStack {
+                        Image(systemName: "mail")
+                            .foregroundColor(.blue)
+                        Text(person.email)
+                    }
+                }
+            }
+            .navigationTitle("Contact List")
+            .listStyle(.grouped)
+        }
     }
 }
 
 struct ContactListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListView()
+        ContactListView(persons: Person.getContacts())
     }
 }

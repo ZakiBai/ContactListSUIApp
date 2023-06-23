@@ -21,14 +21,17 @@ struct FullNameDetailsView: View {
             }
             HStack {
                 Image(systemName: "phone")
+                    .foregroundColor(.blue)
                 Text(person.phone)
             }
             HStack {
                 Image(systemName: "mail")
+                    .foregroundColor(.blue)
                 Text(person.email)
             }
         }
         .navigationTitle(person.fullName)
+        .listStyle(.automatic)
       
     }
 }
