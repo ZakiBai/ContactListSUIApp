@@ -11,6 +11,8 @@
 		35CC1FA22A45B852005844A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC1FA12A45B852005844A6 /* ContentView.swift */; };
 		35CC1FA42A45B856005844A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CC1FA32A45B856005844A6 /* Assets.xcassets */; };
 		35CC1FA72A45B856005844A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CC1FA62A45B856005844A6 /* Preview Assets.xcassets */; };
+		35CC1FAE2A45B99F005844A6 /* FullNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC1FAD2A45B99F005844A6 /* FullNameView.swift */; };
+		35CC1FB02A45B9B2005844A6 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC1FAF2A45B9B2005844A6 /* ContactListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		35CC1FA12A45B852005844A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35CC1FA32A45B856005844A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CC1FA62A45B856005844A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35CC1FAD2A45B99F005844A6 /* FullNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameView.swift; sourceTree = "<group>"; };
+		35CC1FAF2A45B9B2005844A6 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				35CC1F9F2A45B852005844A6 /* ContactListSUIAppApp.swift */,
 				35CC1FA12A45B852005844A6 /* ContentView.swift */,
+				35CC1FAD2A45B99F005844A6 /* FullNameView.swift */,
+				35CC1FAF2A45B9B2005844A6 /* ContactListView.swift */,
 				35CC1FA32A45B856005844A6 /* Assets.xcassets */,
 				35CC1FA52A45B856005844A6 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CC1FA22A45B852005844A6 /* ContentView.swift in Sources */,
+				35CC1FAE2A45B99F005844A6 /* FullNameView.swift in Sources */,
 				35CC1FA02A45B852005844A6 /* ContactListSUIAppApp.swift in Sources */,
+				35CC1FB02A45B9B2005844A6 /* ContactListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
